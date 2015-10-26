@@ -44876,6 +44876,7 @@ var ChartExport = React.createClass({displayName: "ChartExport",
 
 	downloadPNG: function() {
 		filename = this._makeFilename("png");
+    console.log(filename);
 		saveSvgAsPng.saveSvgAsPng(this.state.chartNode, filename, { scale: 2.0 });
 	},
 
