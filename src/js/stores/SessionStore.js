@@ -1,4 +1,3 @@
-
 var assign = require("lodash/object/assign");
 var EventEmitter = require("events").EventEmitter;
 
@@ -85,19 +84,19 @@ Dispatcher.register(function(payload) {
 // Get thousands and decimal separators based on locale
 function detectNumberSeparators() {
 	var n = 1000.50;
-	var l = n.toLocaleString();
+	var l = n.toLocaleString("pt-BR");
 	var s = n.toString();
 	var o = {
 		decimal: l.substring(5,6),
 		thousands: l.substring(1,2)
 	};
 
-	if (l.substring(5,6) == s.substring(5,6)) {
-		o.decimal = ".";
-	}
-	if (l.substring(1,2) == s.substring(1,2)) {
-		o.thousands = ",";
-	}
+	//if (l.substring(5,6) == s.substring(5,6)) {
+		o.decimal = ",";
+	//}
+	//if (l.substring(1,2) == s.substring(1,2)) {
+		o.thousands = "";
+	//}
 
 	return o;
 }
