@@ -908,7 +908,7 @@ svg.renderer-svg tspan {
 }
 .svg-label-text {
   font-size: 20px;
-  font-family: Gotham-Light;
+  font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
   cursor: move;
 }
 .crosshair line {

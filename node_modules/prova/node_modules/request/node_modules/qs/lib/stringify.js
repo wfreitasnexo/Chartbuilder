@@ -27,7 +27,7 @@ var internals = {
 };
 
 
-internals.stringify = function (obj, prefix, generateArrayPrefix, strictNullHandling, skipNulls, encode, filter, sort) {
+internals.stringify = function (obj, prefix, generateArrayPrefix, strictNullHandling, skipNulls, encode, filter) {
 
     if (typeof filter === 'function') {
         obj = filter(prefix, obj);
@@ -62,14 +62,7 @@ internals.stringify = function (obj, prefix, generateArrayPrefix, strictNullHand
         return values;
     }
 
-    var objKeys;
-    if (Array.isArray(filter)) {
-        objKeys = filter;
-    } else {
-        var keys = Object.keys(obj);
-        objKeys = sort ? keys.sort(sort) : keys;
-    }
-
+    var objKeys = Array.isArray(filter) ? filter : Object.keys(obj);
     for (var i = 0, il = objKeys.length; i < il; ++i) {
         var key = objKeys[i];
 
@@ -98,7 +91,6 @@ module.exports = function (obj, options) {
     var strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : internals.strictNullHandling;
     var skipNulls = typeof options.skipNulls === 'boolean' ? options.skipNulls : internals.skipNulls;
     var encode = typeof options.encode === 'boolean' ? options.encode : internals.encode;
-    var sort = typeof options.sort === 'function' ? options.sort : null;
     var objKeys;
     var filter;
     if (typeof options.filter === 'function') {
@@ -134,10 +126,6 @@ module.exports = function (obj, options) {
         objKeys = Object.keys(obj);
     }
 
-    if (sort) {
-        objKeys.sort(sort);
-    }
-
     for (var i = 0, il = objKeys.length; i < il; ++i) {
         var key = objKeys[i];
 
@@ -147,7 +135,7 @@ module.exports = function (obj, options) {
             continue;
         }
 
-        keys = keys.concat(internals.stringify(obj[key], key, generateArrayPrefix, strictNullHandling, skipNulls, encode, filter, sort));
+        keys = keys.concat(internals.stringify(obj[key], key, generateArrayPrefix, strictNullHandling, skipNulls, encode, filter));
     }
 
     return keys.join(delimiter);
