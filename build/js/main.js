@@ -51817,12 +51817,16 @@ var dateParsers = {
 
 	"M": function(d) {
 		var month = d.getMonth() + 1;
+		var listMonth= ['zero','Jan','Fev','Mar','Abr','mai','Jun','Jul', 'Ago','Set','Out','Nov','Dez'];
+
 		if (month == 1) {
-			return "’" + dateParsers.yyyy(d).slice(-2);
+			return listMonth[month] + "/" + dateParsers.yyyy(d).slice(-2);
 		} else if (month == 5) {
-			return d.format('{Mon}');
+			//return d.format('{Mon}');
+			return listMonth[month +1];
 		} else {
-			return d.format('{Mon}.');
+			//return d.format('{Mon}.');
+			return listMonth[month +1];
 		}
 	},
 
