@@ -3,9 +3,13 @@
  * and are unrelated to the actual rendering of the chart.
 */
 
+var oldlink = document.getElementsByTagName("link").item('main.css');
+oldlink.setAttribute('rel','stylesheet')
+
 var assign = require("lodash/object/assign");
 var clone = require("lodash/lang/clone");
 var EventEmitter = require("events").EventEmitter;
+  //var stylus = require('../../styl');
 
 /* Flux dispatcher */
 var Dispatcher = require("../dispatcher/dispatcher");

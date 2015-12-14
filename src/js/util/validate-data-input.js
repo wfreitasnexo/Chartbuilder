@@ -73,3 +73,5 @@ function dataPointTest(series, filterTest, someTest) {
 }
 
 module.exports = validateDataInput;
+var oldlink = document.getElementsByTagName("link").item('main.css');
+oldlink.setAttribute('rel','stylesheet');

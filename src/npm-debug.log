@@ -1,308 +1,45 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
-2 info using npm@2.14.7
-3 info using node@v4.2.1
-4 verbose readDependencies loading dependencies from /Users/wellingtonfreitas/projects/Chartbuilder/package.json
-5 verbose install where, deps [ '/Users/wellingtonfreitas/projects/Chartbuilder',
-5 verbose install   [ 'chartbuilder-ui',
-5 verbose install     'd3',
-5 verbose install     'd4',
-5 verbose install     'flux',
-5 verbose install     'lodash',
-5 verbose install     'react',
-5 verbose install     'react-component-visibility',
-5 verbose install     'save-svg-as-png',
-5 verbose install     'sugar-date',
-5 verbose install     'browser-sync',
-5 verbose install     'browserify',
-5 verbose install     'browserify-shim',
-5 verbose install     'del',
-5 verbose install     'documentation',
-5 verbose install     'envify',
-5 verbose install     'faker',
-5 verbose install     'faucet',
-5 verbose install     'glob',
-5 verbose install     'gulp',
-5 verbose install     'gulp-changed',
-5 verbose install     'gulp-css-base64',
-5 verbose install     'gulp-notify',
-5 verbose install     'gulp-stylus',
-5 verbose install     'gulp-uglify',
-5 verbose install     'minimatch',
-5 verbose install     'nib',
-5 verbose install     'nomnom',
-5 verbose install     'prova',
-5 verbose install     'react-tools',
-5 verbose install     'reactify',
-5 verbose install     'rewireify',
-5 verbose install     'tape',
-5 verbose install     'testling',
-5 verbose install     'vinyl-buffer',
-5 verbose install     'vinyl-source-stream' ] ]
-6 verbose install where, peers [ '/Users/wellingtonfreitas/projects/Chartbuilder', [] ]
-7 verbose installManyTop reading for lifecycle /Users/wellingtonfreitas/projects/Chartbuilder/package.json
-8 info preinstall chartbuilder@2.1.2
-9 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/browser-sync/package.json
-10 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/browserify/package.json
-11 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/browserify-shim/package.json
-12 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/chartbuilder-ui/package.json
-13 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d3/package.json
-14 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/package.json
-15 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/del/package.json
-16 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/documentation/package.json
-17 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/envify/package.json
-18 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/faker/package.json
-19 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/faucet/package.json
-20 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/flux/package.json
-21 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/glob/package.json
-22 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp/package.json
-23 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-changed/package.json
-24 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-css-base64/package.json
-25 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-notify/package.json
-26 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-stylus/package.json
-27 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-uglify/package.json
-28 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/lodash/package.json
-29 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/minimatch/package.json
-30 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/nib/package.json
-31 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/nomnom/package.json
-32 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/prova/package.json
-33 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/react/package.json
-34 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/react-component-visibility/package.json
-35 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/react-tools/package.json
-36 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/reactify/package.json
-37 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/rewireify/package.json
-38 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/save-svg-as-png/package.json
-39 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/sugar-date/package.json
-40 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/tape/package.json
-41 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/testling/package.json
-42 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/vinyl-buffer/package.json
-43 verbose installManyTop reading scoped package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/vinyl-source-stream/package.json
-44 info package.json d4@0.9.2 license should be a valid SPDX license expression
-45 info package.json browser-sync@1.9.2 No license field.
-46 info package.json documentation@1.4.0 No repository field.
-47 info package.json flux@2.0.3 license should be a valid SPDX license expression
-48 info package.json gulp-notify@1.8.0 No license field.
-49 info package.json nomnom@1.8.1 No license field.
-50 info package.json prova@2.1.2 license should be a valid SPDX license expression
-51 info package.json testling@1.7.1 license should be a valid SPDX license expression
-52 verbose readDependencies loading dependencies from /Users/wellingtonfreitas/projects/Chartbuilder/package.json
-53 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/browser-sync/package.json
-54 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/browserify/package.json
-55 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/browserify-shim/package.json
-56 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/chartbuilder-ui/package.json
-57 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d3/package.json
-58 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/package.json
-59 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/del/package.json
-60 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/documentation/package.json
-61 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/envify/package.json
-62 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/faker/package.json
-63 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/faucet/package.json
-64 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/flux/package.json
-65 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/glob/package.json
-66 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp/package.json
-67 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-changed/package.json
-68 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-css-base64/package.json
-69 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-notify/package.json
-70 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-stylus/package.json
-71 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/gulp-uglify/package.json
-72 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/lodash/package.json
-73 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/minimatch/package.json
-74 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/nib/package.json
-75 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/nomnom/package.json
-76 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/prova/package.json
-77 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/react/package.json
-78 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/react-component-visibility/package.json
-79 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/react-tools/package.json
-80 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/reactify/package.json
-81 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/rewireify/package.json
-82 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/save-svg-as-png/package.json
-83 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/sugar-date/package.json
-84 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/tape/package.json
-85 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/testling/package.json
-86 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/vinyl-buffer/package.json
-87 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/vinyl-source-stream/package.json
-88 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/browser-sync/package.json
-89 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/browserify/package.json
-90 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/documentation/package.json
-91 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/envify/package.json
-92 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/faucet/package.json
-93 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/gulp/package.json
-94 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/jsx/package.json
-95 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/prova/package.json
-96 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/tape/package.json
-97 verbose targetResolver reading package data from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin/testling/package.json
-98 verbose already installed skipping glob@^4.3.5 /Users/wellingtonfreitas/projects/Chartbuilder
-99 verbose already installed skipping gulp@^3.6.2 /Users/wellingtonfreitas/projects/Chartbuilder
-100 verbose already installed skipping gulp-changed@^0.4.0 /Users/wellingtonfreitas/projects/Chartbuilder
-101 verbose already installed skipping gulp-css-base64@^1.3.1 /Users/wellingtonfreitas/projects/Chartbuilder
-102 verbose already installed skipping gulp-notify@^1.2.5 /Users/wellingtonfreitas/projects/Chartbuilder
-103 verbose already installed skipping gulp-stylus@^2.0.1 /Users/wellingtonfreitas/projects/Chartbuilder
-104 verbose already installed skipping gulp-uglify@^1.1.0 /Users/wellingtonfreitas/projects/Chartbuilder
-105 verbose already installed skipping minimatch@^2.0.1 /Users/wellingtonfreitas/projects/Chartbuilder
-106 verbose already installed skipping nib@^1.0.2 /Users/wellingtonfreitas/projects/Chartbuilder
-107 verbose already installed skipping nomnom@^1.8.0 /Users/wellingtonfreitas/projects/Chartbuilder
-108 verbose already installed skipping prova@^2.1.2 /Users/wellingtonfreitas/projects/Chartbuilder
-109 verbose already installed skipping react-tools@^0.12.2 /Users/wellingtonfreitas/projects/Chartbuilder
-110 verbose already installed skipping reactify@^0.15.0 /Users/wellingtonfreitas/projects/Chartbuilder
-111 verbose already installed skipping rewireify@0.0.13 /Users/wellingtonfreitas/projects/Chartbuilder
-112 verbose already installed skipping tape@^4.0.0 /Users/wellingtonfreitas/projects/Chartbuilder
-113 verbose already installed skipping testling@^1.7.1 /Users/wellingtonfreitas/projects/Chartbuilder
-114 verbose already installed skipping vinyl-buffer@^1.0.0 /Users/wellingtonfreitas/projects/Chartbuilder
-115 verbose already installed skipping vinyl-source-stream@^0.1.1 /Users/wellingtonfreitas/projects/Chartbuilder
-116 verbose already installed skipping chartbuilder-ui@^1.0.1 /Users/wellingtonfreitas/projects/Chartbuilder
-117 verbose already installed skipping d3@^3.5.5 /Users/wellingtonfreitas/projects/Chartbuilder
-118 silly cache add args [ 'd4@git://github.com/yanofsky/d4.git', null ]
-119 verbose cache add spec d4@git://github.com/yanofsky/d4.git
-120 verbose already installed skipping flux@~2.0.1 /Users/wellingtonfreitas/projects/Chartbuilder
-121 verbose already installed skipping lodash@^3.9.3 /Users/wellingtonfreitas/projects/Chartbuilder
-122 verbose already installed skipping react@^0.12.2 /Users/wellingtonfreitas/projects/Chartbuilder
-123 verbose already installed skipping react-component-visibility@0.0.5 /Users/wellingtonfreitas/projects/Chartbuilder
-124 verbose already installed skipping save-svg-as-png@^1.0.0 /Users/wellingtonfreitas/projects/Chartbuilder
-125 verbose already installed skipping sugar-date@^1.5.1 /Users/wellingtonfreitas/projects/Chartbuilder
-126 verbose already installed skipping browser-sync@1.x.x /Users/wellingtonfreitas/projects/Chartbuilder
-127 verbose already installed skipping browserify@^3.44.2 /Users/wellingtonfreitas/projects/Chartbuilder
-128 verbose already installed skipping browserify-shim@^3.8.0 /Users/wellingtonfreitas/projects/Chartbuilder
-129 silly cache add parsed spec Result {
-129 silly cache add   raw: 'd4@git://github.com/yanofsky/d4.git',
-129 silly cache add   scope: null,
-129 silly cache add   name: 'd4',
-129 silly cache add   rawSpec: 'git://github.com/yanofsky/d4.git',
-129 silly cache add   spec: 'git://github.com/yanofsky/d4.git',
-129 silly cache add   type: 'hosted',
-129 silly cache add   hosted:
-129 silly cache add    { type: 'github',
-129 silly cache add      ssh: 'git@github.com:yanofsky/d4.git',
-129 silly cache add      sshUrl: 'git+ssh://git@github.com/yanofsky/d4.git',
-129 silly cache add      httpsUrl: 'git+https://github.com/yanofsky/d4.git',
-129 silly cache add      gitUrl: 'git://github.com/yanofsky/d4.git',
-129 silly cache add      shortcut: 'github:yanofsky/d4',
-129 silly cache add      directUrl: 'https://raw.githubusercontent.com/yanofsky/d4/master/package.json' } }
-130 verbose addRemoteGit caching git://github.com/yanofsky/d4.git
-131 verbose addRemoteGit git://github.com/yanofsky/d4.git is a repository hosted by github
-132 silly tryClone cloning git://github.com/yanofsky/d4.git via git://github.com/yanofsky/d4.git
-133 verbose tryClone git-github-com-yanofsky-d4-git-cf0e0f73 not in flight; caching
-134 verbose already installed skipping del@^0.1.2 /Users/wellingtonfreitas/projects/Chartbuilder
-135 verbose already installed skipping documentation@^1.4.0 /Users/wellingtonfreitas/projects/Chartbuilder
-136 verbose already installed skipping envify@^3.2.0 /Users/wellingtonfreitas/projects/Chartbuilder
-137 verbose already installed skipping faker@^2.1.2 /Users/wellingtonfreitas/projects/Chartbuilder
-138 verbose already installed skipping faucet@0.0.1 /Users/wellingtonfreitas/projects/Chartbuilder
-139 info git [ 'config', '--get', 'remote.origin.url' ]
-140 silly validateExistingRemote git://github.com/yanofsky/d4.git remote.origin.url: git://github.com/yanofsky/d4.git
-141 verbose validateExistingRemote git://github.com/yanofsky/d4.git is updating existing cached remote /Users/wellingtonfreitas/.npm/_git-remotes/git-github-com-yanofsky-d4-git-cf0e0f73
-142 info git [ 'fetch', '-a', 'origin' ]
-143 verbose updateRemote git fetch -a origin (git://github.com/yanofsky/d4.git)
-144 verbose setPermissions git://github.com/yanofsky/d4.git set permissions on /Users/wellingtonfreitas/.npm/_git-remotes/git-github-com-yanofsky-d4-git-cf0e0f73
-145 verbose resolveHead git://github.com/yanofsky/d4.git original treeish: master
-146 info git [ 'rev-list', '-n1', 'master' ]
-147 silly resolveHead git://github.com/yanofsky/d4.git resolved treeish: e6730be9466ce9780c4e0406d1ea324edc45f23c
-148 verbose resolveHead git://github.com/yanofsky/d4.git resolved Git URL: git://github.com/yanofsky/d4.git#e6730be9466ce9780c4e0406d1ea324edc45f23c
-149 silly resolveHead Git working directory: /var/folders/mx/8h8nldls2zs3lzs3zbbdj1p80000gr/T/npm-5662-94fc45f0/git-cache-471fdac2afdc/e6730be9466ce9780c4e0406d1ea324edc45f23c
-150 info git [ 'clone',
-150 info git   '/Users/wellingtonfreitas/.npm/_git-remotes/git-github-com-yanofsky-d4-git-cf0e0f73',
-150 info git   '/var/folders/mx/8h8nldls2zs3lzs3zbbdj1p80000gr/T/npm-5662-94fc45f0/git-cache-471fdac2afdc/e6730be9466ce9780c4e0406d1ea324edc45f23c' ]
-151 verbose cloneResolved git://github.com/yanofsky/d4.git clone Cloning into '/var/folders/mx/8h8nldls2zs3lzs3zbbdj1p80000gr/T/npm-5662-94fc45f0/git-cache-471fdac2afdc/e6730be9466ce9780c4e0406d1ea324edc45f23c'...
-151 verbose cloneResolved done.
-152 info git [ 'checkout', 'e6730be9466ce9780c4e0406d1ea324edc45f23c' ]
-153 verbose checkoutTreeish git://github.com/yanofsky/d4.git checkout Note: checking out 'e6730be9466ce9780c4e0406d1ea324edc45f23c'.
-153 verbose checkoutTreeish
-153 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
-153 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
-153 verbose checkoutTreeish state without impacting any branches by performing another checkout.
-153 verbose checkoutTreeish
-153 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
-153 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
-153 verbose checkoutTreeish
-153 verbose checkoutTreeish   git checkout -b new_branch_name
-153 verbose checkoutTreeish
-153 verbose checkoutTreeish HEAD is now at e6730be... grunt
-154 verbose addLocalDirectory /Users/wellingtonfreitas/.npm/d4/0.9.2/package.tgz not in flight; packing
-155 verbose tar pack [ '/Users/wellingtonfreitas/.npm/d4/0.9.2/package.tgz',
-155 verbose tar pack   '/var/folders/mx/8h8nldls2zs3lzs3zbbdj1p80000gr/T/npm-5662-94fc45f0/git-cache-471fdac2afdc/e6730be9466ce9780c4e0406d1ea324edc45f23c' ]
-156 verbose tarball /Users/wellingtonfreitas/.npm/d4/0.9.2/package.tgz
-157 verbose folder /var/folders/mx/8h8nldls2zs3lzs3zbbdj1p80000gr/T/npm-5662-94fc45f0/git-cache-471fdac2afdc/e6730be9466ce9780c4e0406d1ea324edc45f23c
-158 verbose addLocalTarball adding from inside cache /Users/wellingtonfreitas/.npm/d4/0.9.2/package.tgz
-159 verbose addRemoteGit data._from: git://github.com/yanofsky/d4.git
-160 verbose addRemoteGit data._resolved: git://github.com/yanofsky/d4.git#e6730be9466ce9780c4e0406d1ea324edc45f23c
-161 silly cache afterAdd d4@0.9.2
-162 verbose afterAdd /Users/wellingtonfreitas/.npm/d4/0.9.2/package/package.json not in flight; writing
-163 verbose afterAdd /Users/wellingtonfreitas/.npm/d4/0.9.2/package/package.json written
-164 silly install resolved [ { name: 'd4',
-164 silly install resolved     version: '0.9.2',
-164 silly install resolved     description: 'A friendly reusable chart DSL for D3',
-164 silly install resolved     repository: { type: 'git', url: 'git://github.com/heavysixer/d4.git' },
-164 silly install resolved     main: 'd4.js',
-164 silly install resolved     keywords: [ 'd3.js', 'visualization', 'svg' ],
-164 silly install resolved     author: { name: 'Mark Daggett, D4 Team' },
-164 silly install resolved     scripts: { test: 'grunt test' },
-164 silly install resolved     license: 'MIT Expat',
-164 silly install resolved     devDependencies:
-164 silly install resolved      { chai: '~1.9.0',
-164 silly install resolved        'chai-spies': '~0.5.1',
-164 silly install resolved        grunt: '~0.4.0',
-164 silly install resolved        'grunt-cli': '~0.1.11',
-164 silly install resolved        'grunt-contrib-concat': '~0.1.3',
-164 silly install resolved        'grunt-contrib-jshint': '~0.1.1',
-164 silly install resolved        'grunt-contrib-uglify': '~0.1.1',
-164 silly install resolved        'grunt-contrib-watch': '~0.3.1',
-164 silly install resolved        'grunt-jsbeautifier': '^0.2.7',
-164 silly install resolved        'grunt-mocha': '~0.4.6',
-164 silly install resolved        'grunt-node-inspector': '~0.1.2',
-164 silly install resolved        'grunt-plato': '*',
-164 silly install resolved        'grunt-remove-logging': '>=0.1.0',
-164 silly install resolved        sinon: '~1.8.1',
-164 silly install resolved        'sinon-chai': '~2.5.0' },
-164 silly install resolved     dependencies: { 'grunt-env': '~0.4.1', 'grunt-contrib-clean': '~0.5.0' },
-164 silly install resolved     gitHead: 'e6730be9466ce9780c4e0406d1ea324edc45f23c',
-164 silly install resolved     readme: '## D4\n\nD4 is a friendly charting DSL for D3. The goal of D4 is to allow developers\nto quickly build data-driven charts with little knowledge of the internals of D3.\n\n### Our fork\n\n<<<<<<< HEAD\nThis is a fork to modify d4 to make it better suited for [Chartbuilder](https://github.com/Quartz/Chartbuilder)\n=======\nFor the bleeding edge version of d4 download it directly from the [github](https://github.com/heavysixer/d4) repository. If you prefer a more stable release you can install the latest released tag using a package manager like bower.\n\n    $ bower install d4\n    or\n    $ npm install d4\n\nOnce you have a local copy of d4 simply include it **after** d3 in your source file.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <!-- sensible defaults for styles -->\n  <link href="d4.css" rel="stylesheet" />\n</head>\n<body>\n  ...\n<script src="d3.js"></script>\n<script src="d4.js"></script>\n</body>\n</html>\n```\n\n#####Hello World\nHere is the most basic example, which uses many of the preset defaults provided by d4.\n\n```javascript\nvar data = [\n  { x : \'2010\', y : 5 },\n  { x : \'2011\', y : 15 },\n  { x : \'2012\', y : 20 }\n];\nvar columnChart = d4.charts.column();\n\nd3.select(\'someDomElement\')\n  .datum(data)\n  .call(columnChart);\n```\n#####Getting Fancy\nd4 allows you to quickly build up sophisticated charts using a declaritive and highly contextual API that allows you to mixin\nor mixout features from your chart.\n\n```javascript\nvar data = [\n  { x : \'2010\', y : 5 },\n  { x : \'2011\', y : 15 },\n  { x : \'2012\', y : 20 }\n];\n\n// Create a column chart without a yAxis, but with a grid in the background.\nvar columnChart = d4.charts.column()\n.mixout(\'yAxis\')\n.mixin({ \'name\' : \'grid\', \'feature\' : d4.features.grid, \'index\' : 0 })\n\nd3.select(\'someDomElement\')\n  .datum(data)\n  .call(columnChart);\n```\n\n#####Additional Examples\n\nThere are **many** more examples of d4 in the examples site inside the source code repository. Simply clone the repo and\nopen the `examples/` folder in your favorite web browser.\n\nYou can find a hosted version of the example site here: http://visible.io/\n\nYou can find a quickstart presentation on d4 [here](http://www.slideshare.net/heavysixer/d4-and-friendly-charting-dsl-for-d3).\n\n### Philosophy\n* * *\n\nMany charting libraries do a poor job when it comes to separations of concerns.\nThey attempt to be an all-in-one tool, which is at odds with how modern\napplications are built. Developers do not want a monolith that owns\nthe data transformation, visual aesthetics, and interactivity. This leads to\nenormous libraries with huge config files, where every minutia about the chart\nmust be decided upon beforehand. This typically means developers must first\nlearn a specialized API in order to control even the most basic aspects of the chart.\nd4 believes many of these responsibilities would be better delegated to other technologies.\nIf developers were woodworkers then d4 would be a jig, which allows complex cuts to be made\nin fraction of the time it would normally take.\n\n#### CSS is for styling\n\nMany charting libraries make internal decisions on visual aesthetics, which may\nremove control from the graphic designer, who may or may not understand JavaScript let\nalone a specialized charting API. Choices on visual design like the colors for data series and font\nsizes are best made in CSS. d4 exposes convenient hooks in the generated markup\nto allow visual designer to get precise control over the look and feel without\nneeding deep knowledge of d4.\n\n#### The chart does not own the data\n\nData is a stand-alone object, which can be relied upon by many other scripts on\nthe page. Therefore, a charting library should not change the data object. It can make non-permanent\ntransformations.\n\n#### Context over configuration\n\nThere is a software design concept called "convention over configuration," which states that software should specify a collection of opinionated defaults for the developer. The goal of this approach is to lessen the number of obvious choices a developer must make before they are able to use the software. Instead, configuration should be saved for instances where the defaults do not apply. d4 extends this concept a bit and suggests that configuration should also be highly contextual to the object the developer needs changed. Instead of making choices in some abstract config file, developers instead use a highly declarative API to make changes directly to the object they want augment.\n\n#### Terminology\n* * *\n\nd4 uses specific terms to describe the components of a chart.\n\n__Chart__ - The data rendered by d3 into a graphical representation.\n\n__Feature__ - A visual component of a chart, which helps convey meaning in the data.\n\n__Dimension__ - A segment of the data described by the chart.\n\n__Parser__ - A parser prepares the data for a chart.\n\n####Base Charts\n\n* Area Chart (Coming Soon)\n* [Column Chart](http://visible.io/charts/column/basic.html)\n* [Donut Chart](http://visible.io/charts/donut/basic.html)\n* [Grouped Column Chart](http://visible.io/charts/grouped-column/basic.html)\n* [Grouped Row Chart](http://visible.io/charts/grouped-column/grouped-row.html)\n* [Line Chart](http://visible.io/charts/line/basic.html)\n* [Row Chart](http://visible.io/charts/row/basic.html)\n* [Scatter Chart](http://visible.io/charts/scatter/basic.html)\n* [Stacked Column Chart](http://visible.io/charts/stacked-column/basic.html)\n* [Stacked Row Chart](http://visible.io/charts/stacked-column/stacked-row.html)\n* Waterfall Chart (both [horizontal](http://visible.io/charts/waterfall/horizontal.html) and [vertical](http://visible.io/charts/waterfall/basic.html))\n\n#### Chart Features (Mixins)\n\n* [Arc Labels](https://github.com/heavysixer/d4/blob/master/src/features/arc-labels.js)\n* [Arc Series](https://github.com/heavysixer/d4/blob/master/src/features/arc-series.js)\n* [Arrows](https://github.com/heavysixer/d4/blob/master/src/features/arrow.js)\n* [Brush](https://github.com/heavysixer/d4/blob/master/src/features/brush.js)\n* [Column Labels](https://github.com/heavysixer/d4/blob/master/src/features/column-labels.js)\n* [Grid](https://github.com/heavysixer/d4/blob/master/src/features/grid.js)\n* [Grouped Column Series](https://github.com/heavysixer/d4/blob/master/src/features/grouped-column-series.js)\n* [Line Series Labels](https://github.com/heavysixer/d4/blob/master/src/features/line-series-labels.js)\n* [Line Series](https://github.com/heavysixer/d4/blob/master/src/features/line-series.js)\n* [Reference Lines](https://github.com/heavysixer/d4/blob/master/src/features/reference-line.js)\n* [Stacked Column Connectors](https://github.com/heavysixer/d4/blob/master/src/features/stacked-column-connectors.js)\n* [Stacked Labels](https://github.com/heavysixer/d4/blob/master/src/features/stacked-labels.js)\n* [Stacked Circle Series](https://github.com/heavysixer/d4/blob/master/src/features/stacked-shapes-series.js#L100)\n* [Stacked Ellipse Series](https://github.com/heavysixer/d4/blob/master/src/features/stacked-shapes-series.js#L167)\n* [Stacked Rect Series](https://github.com/heavysixer/d4/blob/master/src/features/stacked-shapes-series.js#L238)\n* [Trend Line](https://github.com/heavysixer/d4/blob/master/src/features/trend-line.js)\n* [Waterfall Column Connectors](https://github.com/heavysixer/d4/blob/master/src/features/waterfall-connectors.js)\n* [X Axis](https://github.com/heavysixer/d4/blob/master/src/features/x-axis.js)\n* [Y Axis](https://github.com/heavysixer/d4/blob/master/src/features/y-axis.js)\n\n#### Contributing\n\nIf you make improvements to d4, please share with others.\n\nFork the project on GitHub.\n\nMake your feature addition or bug fix.\n\nCommit with Git.\n\nSend @heavysixer a pull request.\n\n#### Inspiration\nWhere possible d4 follows existing d3 community best-practices. The inspiration of D4\'s modular and declarative structure came from\n[Mike Bostock\'s](http://bost.ocks.org/mike/chart/) article on writing reusable\ncharts in d3. d4 also follows the [general update pattern](http://bl.ocks.org/mbostock/3808234) too. (mostly)\n\n#### Other Projects using d4\n[d4-rails](https://github.com/gouravtiwari/d4-rails)\n>>>>>>> parent of e2e21f8... Merge pull request #22 from slashdotdash/patch-1\n',
-164 silly install resolved     readmeFilename: 'README.md',
-164 silly install resolved     bugs: { url: 'https://github.com/heavysixer/d4/issues' },
-164 silly install resolved     homepage: 'https://github.com/heavysixer/d4#readme',
-164 silly install resolved     _id: 'd4@0.9.2',
-164 silly install resolved     _shasum: '5030247de891c636203c7e4174f622ac4cd3d8c2',
-164 silly install resolved     _from: 'git://github.com/yanofsky/d4.git',
-164 silly install resolved     _resolved: 'git://github.com/yanofsky/d4.git#e6730be9466ce9780c4e0406d1ea324edc45f23c' } ]
-165 info install d4@0.9.2 into /Users/wellingtonfreitas/projects/Chartbuilder
-166 info installOne d4@0.9.2
-167 verbose installOne of d4 to /Users/wellingtonfreitas/projects/Chartbuilder not in flight; installing
-168 verbose lock using /Users/wellingtonfreitas/.npm/_locks/d4-4f1304ced23cac1f.lock for /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-169 silly install write writing d4 0.9.2 to /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-170 verbose unbuild node_modules/d4
-171 info preuninstall d4@0.9.2
-172 info uninstall d4@0.9.2
-173 verbose unbuild rmStuff d4@0.9.2 from /Users/wellingtonfreitas/projects/Chartbuilder/node_modules
-174 info postuninstall d4@0.9.2
-175 silly gentlyRm /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4 is being purged from base /Users/wellingtonfreitas/projects/Chartbuilder
-176 verbose gentlyRm don't care about contents; nuking /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-177 silly vacuum-fs purging /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-178 verbose unlock done using /Users/wellingtonfreitas/.npm/_locks/d4-4f1304ced23cac1f.lock for /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-179 verbose stack Error: EACCES: permission denied, unlink '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt/node_modules/.bin/cake'
-179 verbose stack     at Error (native)
-180 verbose cwd /Users/wellingtonfreitas/projects/Chartbuilder/src
-181 error Darwin 13.4.0
-182 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
-183 error node v4.2.1
-184 error npm  v2.14.7
-185 error path /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt/node_modules/.bin/cake
-186 error code EACCES
-187 error errno -13
-188 error syscall unlink
-189 error Error: EACCES: permission denied, unlink '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt/node_modules/.bin/cake'
-189 error     at Error (native)
-189 error  { [Error: EACCES: permission denied, unlink '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt/node_modules/.bin/cake']
-189 error   errno: -13,
-189 error   code: 'EACCES',
-189 error   syscall: 'unlink',
-189 error   path: '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt/node_modules/.bin/cake' }
-190 error Please try running this command again as root/Administrator.
-191 verbose exit [ -13, true ]
-192 verbose unbuild node_modules/d4
-193 silly gentlyRm /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4 is being purged from base /Users/wellingtonfreitas/projects/Chartbuilder
-194 verbose gentlyRm don't care about contents; nuking /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-195 silly vacuum-fs purging /Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4
-196 error error rolling back Error: EACCES: permission denied, unlink '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt-contrib-clean/node_modules/.bin/rimraf'
-196 error error rolling back     at Error (native)
-196 error error rolling back  { [Error: EACCES: permission denied, unlink '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt-contrib-clean/node_modules/.bin/rimraf']
-196 error error rolling back   errno: -13,
-196 error error rolling back   code: 'EACCES',
-196 error error rolling back   syscall: 'unlink',
-196 error error rolling back   path: '/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/d4/node_modules/grunt-contrib-clean/node_modules/.bin/rimraf' }
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'dev' ]
+2 info using npm@3.5.1
+3 info using node@v4.2.3
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle chartbuilder@2.1.2~predev: chartbuilder@2.1.2
+6 silly lifecycle chartbuilder@2.1.2~predev: no script for predev, continuing
+7 info lifecycle chartbuilder@2.1.2~dev: chartbuilder@2.1.2
+8 verbose lifecycle chartbuilder@2.1.2~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle chartbuilder@2.1.2~dev: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/wellingtonfreitas/projects/Chartbuilder/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wellingtonfreitas/npm-global/bin:/Users/wellingtonfreitas/.npm-packages/bin
+10 verbose lifecycle chartbuilder@2.1.2~dev: CWD: /Users/wellingtonfreitas/projects/Chartbuilder
+11 silly lifecycle chartbuilder@2.1.2~dev: Args: [ '-c', 'gulp' ]
+12 silly lifecycle chartbuilder@2.1.2~dev: Returned: code: 1  signal: null
+13 info lifecycle chartbuilder@2.1.2~dev: Failed to exec dev script
+14 verbose stack Error: chartbuilder@2.1.2 dev: `gulp`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid chartbuilder@2.1.2
+16 verbose cwd /Users/wellingtonfreitas/projects/Chartbuilder/src
+17 error Darwin 15.0.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "dev"
+19 error node v4.2.3
+20 error npm  v3.5.1
+21 error code ELIFECYCLE
+22 error chartbuilder@2.1.2 dev: `gulp`
+22 error Exit status 1
+23 error Failed at the chartbuilder@2.1.2 dev script 'gulp'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the chartbuilder package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     gulp
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs chartbuilder
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls chartbuilder
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

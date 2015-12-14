@@ -136,7 +136,7 @@ var ChartGridEditor = React.createClass({
 				<div className="editor-options">
 					<h2>
 						<span className="step-number">2</span>
-						<span>Input your data</span>
+						<span>Coloque seus dados</span>
 					</h2>
 					<DataInput
 						chartProps={chartProps}
@@ -146,7 +146,7 @@ var ChartGridEditor = React.createClass({
 				<div className="editor-options">
 					<h2>
 						<span className="step-number">3</span>
-						<span>Set series options</span>
+						<span>Opções de exibição</span>
 					</h2>
 					{chartSettings}
 					<ChartGrid_universalToggle

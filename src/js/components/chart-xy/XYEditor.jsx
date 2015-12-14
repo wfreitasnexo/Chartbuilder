@@ -33,9 +33,9 @@ var ChartEditorMixin = require("../mixins/ChartEditorMixin.js");
 
 /* Available XY chart type options */
 var typeOptions = [
-	{ title: "Line", content: "Line", value: "line" },
-	{ title: "Columns", content: "Columns", value: "column" },
-	{ title: "Dots", content: "Dots", value: "scatterPlot" }
+	{ title: "Line", content: "Linha", value: "line" },
+	{ title: "Columns", content: "Coluna", value: "column" },
+	{ title: "Dots", content: "Pontos", value: "scatterPlot" }
 ];
 
 /* Available XY axis options */
@@ -146,7 +146,7 @@ var XYEditor = React.createClass({
 				<div className="editor-options">
 					<h2>
 						<span className="step-number">2</span>
-						<span>Input your data</span>
+						<span>Coloque seus dados</span>
 					</h2>
 					<DataInput
 						chartProps={chartProps}
@@ -156,7 +156,7 @@ var XYEditor = React.createClass({
 				<div className="editor-options">
 					<h2>
 						<span className="step-number">3</span>
-						<span>Set series options</span>
+						<span>Opções de exibição</span>
 					</h2>
 				<XY_resetLabels
 					annotations={chartProps._annotations}

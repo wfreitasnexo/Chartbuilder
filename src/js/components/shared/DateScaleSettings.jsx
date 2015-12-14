@@ -46,23 +46,23 @@ var DateScaleSettings = React.createClass({
 		// from `util/process-dates.js` on update
 		dateFrequencyOptions: [
 			{ value: "auto", content: "auto" },
-			{ value: "1h", content: "1 hour" },
-			{ value: "2h", content: "2 hours" },
-			{ value: "3h", content: "3 hours" },
-			{ value: "4h", content: "4 hours" },
-			{ value: "6h", content: "6 hours" },
-			{ value: "1d", content: "1 day" },
-			{ value: "1w", content: "1 week" },
-			{ value: "1m", content: "1 month" },
-			{ value: "3m", content: "3 months" },
-			{ value: "6m", content: "6 months" },
-			{ value: "1y", content: "1 year" },
-			{ value: "2y", content: "2 years" },
-			{ value: "5y", content: "5 years" },
-			{ value: "10y", content: "10 years" },
-			{ value: "20y", content: "20 years" },
-			{ value: "50y", content: "50 years" },
-			{ value: "100y", content: "100 years" }
+			{ value: "1h", content: "1 hora" },
+			{ value: "2h", content: "2 horas" },
+			{ value: "3h", content: "3 horas" },
+			{ value: "4h", content: "4 horas" },
+			{ value: "6h", content: "6 horas" },
+			{ value: "1d", content: "1 dia" },
+			{ value: "1w", content: "1 semana" },
+			{ value: "1m", content: "1 mês" },
+			{ value: "3m", content: "3 meses" },
+			{ value: "6m", content: "6 meses" },
+			{ value: "1y", content: "1 ano" },
+			{ value: "2y", content: "2 anos" },
+			{ value: "5y", content: "5 anos" },
+			{ value: "10y", content: "10 anos" },
+			{ value: "20y", content: "20 anos" },
+			{ value: "50y", content: "50 anos" },
+			{ value: "100y", content: "100 anos" }
 		],
 
 		// Use ids to look up appropriate date formatter from `util/process-dates.js`
@@ -102,10 +102,10 @@ var DateScaleSettings = React.createClass({
 			<div className="scale-options scale-options-date">
 				<h2 className="scale-option-title">
 					<span className="step-number">{this.props.stepNumber}</span>
-					Set the frequency and formatting of the bottom axis
+					Determina a frequência e formato do eixo de baixo
 				</h2>
 				<div className="labelled-dropdown">
-					<label className="editor-label date-setting">Date frequency</label>
+					<label className="editor-label date-setting">Frequência da data</label>
 					<Dropdown
 						onChange={this._handleDateScaleUpdate.bind(null, "dateFrequency")}
 						options={this._config.dateFrequencyOptions}
@@ -113,7 +113,7 @@ var DateScaleSettings = React.createClass({
 					/>
 				</div>
 				<div className="labelled-dropdown">
-					<label className="editor-label date-setting">Date format</label>
+					<label className="editor-label date-setting">Formato da data</label>
 					<Dropdown
 						onChange={this._handleDateScaleUpdate.bind(null, "dateFormat")}
 						options={this._config.dateFormatOptions}

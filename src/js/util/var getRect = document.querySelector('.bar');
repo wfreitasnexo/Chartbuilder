@@ -1,0 +1,13 @@
+ window.onload = function(){
+	var pronto =document.querySelector('.button-group-button');
+	pronto.addEventListener('click',
+		var getRect = document.querySelector('.bar');
+		if(getRect !=null){
+			var titles = document.querySelectorAll('.grid-chart-block .leftAxis .tick text');
+			for(var i=0; i<titles.length; i++){
+				titles[i].setAttribute('x','-125');
+				titles[i].setAttribute('style','text-anchor: start');
+			}
+		}
+	});	
+}

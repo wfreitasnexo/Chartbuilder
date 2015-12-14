@@ -99,12 +99,6 @@ gulp.task("clean-dist", function (done) {
 	], done);
 });
 
-gulp.task("copy-htdocs", function () {
-	return gulp.src(config.paths.src.htdocs + "/**")
-		.pipe(changed(config.dirs.build))
-		.pipe(gulp.dest(config.dirs.build))
-		.pipe(reload({ stream: true }));
-});
 
 gulp.task("copy-test-htdocs", function () {
 	return gulp.src("test/render/index.html")
@@ -181,6 +175,12 @@ gulp.task("test-page", [
 	gulp.watch("./node_modules/d4/d4.js", ["browserify:dev"]);
 	gulp.watch("./node_modules/d3/d3.js", ["browserify:dev"]);
 	done();
+});
+gulp.task("copy-htdocs", function () {
+	return gulp.src(config.paths.src.htdocs + "/**")
+		.pipe(changed(config.dirs.build))
+		.pipe(gulp.dest(config.dirs.build))
+		.pipe(reload({ stream: true }));
 });
 
 gulp.task("default", ["clean"], function () {

@@ -118,7 +118,7 @@ var defaultProps = {
 };
 
 var chart_grid_config = new ChartConfig({
-	displayName: "Chart grid",
+	displayName: "Comparação",
 	parser: require("./parse-chart-grid"),
 	calculateDimensions: require("./chart-grid-dimensions"),
 	display: display,

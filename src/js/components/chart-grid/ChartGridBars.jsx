@@ -309,7 +309,9 @@ function drawBarChartGrid(el, state) {
 		.append("g")
 		.datum(chartProps.data)
 		.call(chart);
+leftTitles();
 }
+
 
 function left_bar(_chart, state) {
 	var chartProps = state.chartProps;
@@ -337,6 +339,17 @@ function left_bar(_chart, state) {
 	return _chart;
 }
 
+function leftTitles(){
+	var getRect = document.querySelector('.bar');
+		if(getRect !=null){
+			var titles = document.querySelectorAll('.grid-chart-block .leftAxis .tick text');
+			for(var i=0; i<titles.length; i++){
+				titles[i].setAttribute('x','-125');
+				titles[i].setAttribute('style','text-anchor: start;fill: black');
+			}
+		}
+}
+
 function right_bar(_chart, state) {
 	var chartProps = state.chartProps;
 
@@ -357,7 +370,6 @@ function right_bar(_chart, state) {
 		x.key("value").domain(chartProps.scale.primaryScale.domain)
 		x.range([0, this.outerWidth - this.padding.right - state.styleConfig.xOverTick])
 	});
-
 	return _chart;
 }
 

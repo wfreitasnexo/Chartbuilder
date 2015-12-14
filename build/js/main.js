@@ -43259,7 +43259,7 @@ var defaultProps = {
 };
 
 var chart_grid_config = new ChartConfig({
-	displayName: "Chart grid",
+	displayName: "Comparação",
 	parser: require("./parse-chart-grid"),
 	calculateDimensions: require("./chart-grid-dimensions"),
 	display: display,
@@ -44489,7 +44489,7 @@ var defaultProps = {
 };
 
 var xy_config = new ChartConfig({
-	displayName: "XY Chart",
+	displayName: "Gráfico XY",
 	parser: require("./parse-xy"),
 	calculateDimensions: require("./xy-dimensions"),
 	display: display,
@@ -44930,7 +44930,7 @@ var ChartExport = React.createClass({displayName: "ChartExport",
 
 		return (
 			React.createElement("div", {className: "editor-options"}, 
-				React.createElement("h2", null, React.createElement("span", {className: "step-number"}, this.props.stepNumber), React.createElement("span", null, "Export your chart")), 
+				React.createElement("h2", null, React.createElement("span", {className: "step-number"}, this.props.stepNumber), React.createElement("span", null, "Exporte seu gráfico")), 
 					React.createElement("div", {className: "export-button-wrapper"}, 
 						chartExportButtons
 					)
@@ -45053,7 +45053,7 @@ var ChartMetadata = React.createClass({displayName: "ChartMetadata",
 			React.createElement("div", {className: "editor-options"}, 
 				React.createElement("h2", null, 
 					React.createElement("span", {className: "step-number"}, this.props.stepNumber), 
-					React.createElement("span", null, "Set title, source, credit and size")
+					React.createElement("span", null, "Título, fonte, crédito e tamanho")
 				), 
 				textInputs, 
 				this.props.additionalComponents, 
@@ -45169,7 +45169,7 @@ var ChartTypeSelctor = React.createClass({displayName: "ChartTypeSelctor",
 		React.createElement("div", {className: "editor-options"}, 
 			React.createElement("h2", null, 
 				React.createElement("span", {className: "step-number"}, "1"), 
-				React.createElement("span", null, "Select chart type")
+				React.createElement("span", null, "Selecione o tipo do gráfico")
 			), 
 			React.createElement(ButtonGroup, {
 				buttons: this.state.chartConfig, 
@@ -46141,7 +46141,9 @@ function drawBarChartGrid(el, state) {
 		.append("g")
 		.datum(chartProps.data)
 		.call(chart);
+leftTitles();
 }
+
 
 function left_bar(_chart, state) {
 	var chartProps = state.chartProps;
@@ -46169,6 +46171,17 @@ function left_bar(_chart, state) {
 	return _chart;
 }
 
+function leftTitles(){
+	var getRect = document.querySelector('.bar');
+		if(getRect !=null){
+			var titles = document.querySelectorAll('.grid-chart-block .leftAxis .tick text');
+			for(var i=0; i<titles.length; i++){
+				titles[i].setAttribute('x','-125');
+				titles[i].setAttribute('style','text-anchor: start;fill: black');
+			}
+		}
+}
+
 function right_bar(_chart, state) {
 	var chartProps = state.chartProps;
 
@@ -46189,7 +46202,6 @@ function right_bar(_chart, state) {
 		x.key("value").domain(chartProps.scale.primaryScale.domain)
 		x.range([0, this.outerWidth - this.padding.right - state.styleConfig.xOverTick])
 	});
-
 	return _chart;
 }
 
@@ -46355,7 +46367,7 @@ var ChartGridEditor = React.createClass({displayName: "ChartGridEditor",
 				React.createElement("div", {className: "editor-options"}, 
 					React.createElement("h2", null, 
 						React.createElement("span", {className: "step-number"}, "2"), 
-						React.createElement("span", null, "Input your data")
+						React.createElement("span", null, "Coloque seus dados")
 					), 
 					React.createElement(DataInput, {
 						chartProps: chartProps, 
@@ -46365,7 +46377,7 @@ var ChartGridEditor = React.createClass({displayName: "ChartGridEditor",
 				React.createElement("div", {className: "editor-options"}, 
 					React.createElement("h2", null, 
 						React.createElement("span", {className: "step-number"}, "3"), 
-						React.createElement("span", null, "Set series options")
+						React.createElement("span", null, "Opções de exibição")
 					), 
 					chartSettings, 
 					React.createElement(ChartGrid_universalToggle, {
@@ -47519,9 +47531,9 @@ var ChartEditorMixin = require("../mixins/ChartEditorMixin.js");
 
 /* Available XY chart type options */
 var typeOptions = [
-	{ title: "Line", content: "Line", value: "line" },
-	{ title: "Columns", content: "Columns", value: "column" },
-	{ title: "Dots", content: "Dots", value: "scatterPlot" }
+	{ title: "Line", content: "Linha", value: "line" },
+	{ title: "Columns", content: "Coluna", value: "column" },
+	{ title: "Dots", content: "Pontos", value: "scatterPlot" }
 ];
 
 /* Available XY axis options */
@@ -47632,7 +47644,7 @@ var XYEditor = React.createClass({displayName: "XYEditor",
 				React.createElement("div", {className: "editor-options"}, 
 					React.createElement("h2", null, 
 						React.createElement("span", {className: "step-number"}, "2"), 
-						React.createElement("span", null, "Input your data")
+						React.createElement("span", null, "Coloque seus dados")
 					), 
 					React.createElement(DataInput, {
 						chartProps: chartProps, 
@@ -47642,7 +47654,7 @@ var XYEditor = React.createClass({displayName: "XYEditor",
 				React.createElement("div", {className: "editor-options"}, 
 					React.createElement("h2", null, 
 						React.createElement("span", {className: "step-number"}, "3"), 
-						React.createElement("span", null, "Set series options")
+						React.createElement("span", null, "Opções de exibição")
 					), 
 				React.createElement(XY_resetLabels, {
 					annotations: chartProps._annotations, 
@@ -48932,42 +48944,42 @@ var Alert = chartbuilderUI.Alert;
 
 var inputAlerts = {
 	"EMPTY": {
-		alertText: "Enter some data above.",
+		alertText: "Digite alguns dados acima.",
 		boldText: "Hello!",
 		alertType: "default"
 	},
 	"UNEVEN_SERIES": {
-		alertText: "At least one of your rows does not have the same number of columns as the rest.",
+		alertText: "Pelo menos uma das suas linhas não têm o mesmo número de colunas como o restante .",
 		boldText: "Error:",
 		alertType: "error"
 	},
 	"column_zero": {
-		alertText: "You have a column chart that doesn't have a zero axis. Double check that this is ok.",
+		alertText: "Você tem um gráfico de colunas que não tem um eixo zero. Verifique que este é ok.",
 		boldText: "Warning:",
 		alertType: "warning"
 	},
 	"TOO_MANY_SERIES": {
-		alertText: "You have more than 12 columns, which is more than Chartbuilder supports.",
+		alertText: "Você tem mais de 12 colunas , que é mais do que apoios Chartbuilder",
 		boldText: "Error:",
 		alertType: "error"
 	},
 	"TOO_FEW_SERIES": {
-		alertText: "You have fewer than 2 rows, which is fewer than Chartbuilder supports.",
+		alertText: "Você tem menos de 2 linhas , o que é menos do que Chartbuilder suporta .",
 		boldText: "Error:",
 		alertType: "error"
 	},
 	"NAN_VALUES": {
-		alertText: "At least one of your data points cannot be converted to a number",
+		alertText: "Pelo menos um dos seus pontos de dados não pode ser convertido a uma série",
 		boldText: "Error:",
 		alertType: "error"
 	},
 	"NOT_DATES": {
-		alertText: "A least one of your dates cannot be understood by Chartbuilder",
+		alertText: "A menos, uma das suas datas não podem ser compreendidas por Chartbuilder",
 		boldText: "Error:",
 		alertType: "error"
 	},
 	"VALID": {
-		alertText: "Your data are looking healthy",
+		alertText: "Seus dados parecem satisfatórios",
 		boldText: "",
 		alertType: "success"
 	}
@@ -49055,7 +49067,7 @@ var DataInput = React.createClass({displayName: "DataInput",
 			React.createElement("div", {className: this.props.className, 
 				onDragOver: this._toggleDropState
 			}, 
-				React.createElement("label", null, "if you have a json file to load, drop that here"), 
+				React.createElement("label", null, "se você tem um arquivo json, o arraste para cá"), 
 				React.createElement(TextArea, {
 					value: this.props.chartProps.input.raw, 
 					onChange: this._handleReparseUpdate.bind(null, "input"), 
@@ -49132,23 +49144,23 @@ var DateScaleSettings = React.createClass({displayName: "DateScaleSettings",
 		// from `util/process-dates.js` on update
 		dateFrequencyOptions: [
 			{ value: "auto", content: "auto" },
-			{ value: "1h", content: "1 hour" },
-			{ value: "2h", content: "2 hours" },
-			{ value: "3h", content: "3 hours" },
-			{ value: "4h", content: "4 hours" },
-			{ value: "6h", content: "6 hours" },
-			{ value: "1d", content: "1 day" },
-			{ value: "1w", content: "1 week" },
-			{ value: "1m", content: "1 month" },
-			{ value: "3m", content: "3 months" },
-			{ value: "6m", content: "6 months" },
-			{ value: "1y", content: "1 year" },
-			{ value: "2y", content: "2 years" },
-			{ value: "5y", content: "5 years" },
-			{ value: "10y", content: "10 years" },
-			{ value: "20y", content: "20 years" },
-			{ value: "50y", content: "50 years" },
-			{ value: "100y", content: "100 years" }
+			{ value: "1h", content: "1 hora" },
+			{ value: "2h", content: "2 horas" },
+			{ value: "3h", content: "3 horas" },
+			{ value: "4h", content: "4 horas" },
+			{ value: "6h", content: "6 horas" },
+			{ value: "1d", content: "1 dia" },
+			{ value: "1w", content: "1 semana" },
+			{ value: "1m", content: "1 mês" },
+			{ value: "3m", content: "3 meses" },
+			{ value: "6m", content: "6 meses" },
+			{ value: "1y", content: "1 ano" },
+			{ value: "2y", content: "2 anos" },
+			{ value: "5y", content: "5 anos" },
+			{ value: "10y", content: "10 anos" },
+			{ value: "20y", content: "20 anos" },
+			{ value: "50y", content: "50 anos" },
+			{ value: "100y", content: "100 anos" }
 		],
 
 		// Use ids to look up appropriate date formatter from `util/process-dates.js`
@@ -49188,10 +49200,10 @@ var DateScaleSettings = React.createClass({displayName: "DateScaleSettings",
 			React.createElement("div", {className: "scale-options scale-options-date"}, 
 				React.createElement("h2", {className: "scale-option-title"}, 
 					React.createElement("span", {className: "step-number"}, this.props.stepNumber), 
-					"Set the frequency and formatting of the bottom axis"
+					"Determina a frequência e formato do eixo de baixo"
 				), 
 				React.createElement("div", {className: "labelled-dropdown"}, 
-					React.createElement("label", {className: "editor-label date-setting"}, "Date frequency"), 
+					React.createElement("label", {className: "editor-label date-setting"}, "Frequência da data"), 
 					React.createElement(Dropdown, {
 						onChange: this._handleDateScaleUpdate.bind(null, "dateFrequency"), 
 						options: this._config.dateFrequencyOptions, 
@@ -49199,7 +49211,7 @@ var DateScaleSettings = React.createClass({displayName: "DateScaleSettings",
 					)
 				), 
 				React.createElement("div", {className: "labelled-dropdown"}, 
-					React.createElement("label", {className: "editor-label date-setting"}, "Date format"), 
+					React.createElement("label", {className: "editor-label date-setting"}, "Formato da data"), 
 					React.createElement(Dropdown, {
 						onChange: this._handleDateScaleUpdate.bind(null, "dateFormat"), 
 						options: this._config.dateFormatOptions, 
@@ -50873,6 +50885,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			showMobilePreview: false}
 		),
 	container );
+	 var changeLink = document.getElementsByTagName("link").item('main.css');
+	 changeLink.setAttribute('rel','stylesheet');
+	 document.querySelectorAll('.scale-option-title span')[1].innerHTML = 'Defina o eixo primário';
 });
 
 }).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
@@ -50882,9 +50897,13 @@ document.addEventListener("DOMContentLoaded", function() {
  * and are unrelated to the actual rendering of the chart.
 */
 
+var oldlink = document.getElementsByTagName("link").item('main.css');
+oldlink.setAttribute('rel','stylesheet')
+
 var assign = require("lodash/object/assign");
 var clone = require("lodash/lang/clone");
 var EventEmitter = require("events").EventEmitter;
+  //var stylus = require('../../styl');
 
 /* Flux dispatcher */
 var Dispatcher = require("../dispatcher/dispatcher");
@@ -52202,5 +52221,7 @@ function dataPointTest(series, filterTest, someTest) {
 }
 
 module.exports = validateDataInput;
+var oldlink = document.getElementsByTagName("link").item('main.css');
+oldlink.setAttribute('rel','stylesheet');
 
 },{"lodash/collection/filter":21,"lodash/collection/map":23,"lodash/collection/some":25}]},{},[315])

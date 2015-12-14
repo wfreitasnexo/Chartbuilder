@@ -19,4 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			showMobilePreview={false}
 		/>,
 	container );
+	 var changeLink = document.getElementsByTagName("link").item('main.css');
+	 changeLink.setAttribute('rel','stylesheet');
+	 document.querySelectorAll('.scale-option-title span')[1].innerHTML = 'Defina o eixo primário';
 });

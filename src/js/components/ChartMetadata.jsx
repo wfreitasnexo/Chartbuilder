@@ -109,7 +109,7 @@ var ChartMetadata = React.createClass({
 			<div className="editor-options">
 				<h2>
 					<span className="step-number">{this.props.stepNumber}</span>
-					<span>Set title, source, credit and size</span>
+					<span>Título, fonte, crédito e tamanho</span>
 				</h2>
 				{textInputs}
 				{this.props.additionalComponents}
